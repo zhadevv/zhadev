@@ -1,0 +1,531 @@
+<!-- NGAPAIN LU MEMEK -->
+<!-- MW COPY YAHHH -->
+<!-- KASIH KREDIT KE GW JEMBUT-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zhadev</title>
+    <meta name="description" content="Chat dengan berbagai model AI seperti Gemini, Claude, GPT-4 untuk membantu kebutuhan Anda">
+    <meta name="keywords" content="zhadev, AI assistant, chat AI, Gemini, Claude, GPT-4, Deepseek Coder">
+    <meta name="google-site-verification" content="3gH9fB_ANWfjbBbmTgsWLNrD3fiK0cBpZYF4DRYKi4Y">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/logo.png">
+    <style>
+        .donation-container {
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+        }
+
+        .donation-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .donation-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .donation-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .donation-card {
+            background: white;
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow-xl);
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .donation-icon {
+            font-size: 4rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .donation-card h2 {
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .donation-card p {
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .payment-method {
+            background: #004e88;
+            padding: 2.5rem 2rem;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .payment-method:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: var(--box-shadow);
+        }
+
+        .payment-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .payment-dana { color: #00B4FF; }
+        .payment-gopay { color: #00AA13; }
+        .payment-ovo { color: #4C2A86; }
+        .payment-bank { color: var(--primary-color); }
+        .payment-paypal { color: #0070BA; }
+
+        .payment-method h3 {
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .payment-info {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--gray-light);
+        }
+
+        .account-number {
+            font-family: 'Courier New', monospace;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--gray-light);
+        }
+
+        .copy-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .copy-btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .copy-btn.copied {
+            background: var(--success-color);
+        }
+
+        .qrcode-section {
+            margin-top: 2rem;
+        }
+
+        .qrcode {
+            max-width: 200px;
+            margin: 0 auto;
+            padding: 1rem;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .qrcode img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius-sm);
+        }
+
+        .donation-impact {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+        }
+
+        .impact-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .impact-item {
+            padding: 1.5rem;
+        }
+
+        .impact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .impact-number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .impact-label {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .faq-section {
+            margin-top: 4rem;
+        }
+
+        .faq-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--dark-color);
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: black;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #ebebeb;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: var(--primary-light);
+            color: #5d5d5d;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-answer.active {
+            padding: 1.5rem;
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            color: var(--secondary-color);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .donation-container {
+                padding: 120px 0 60px;
+            }
+
+            .donation-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .donation-card {
+                padding: 2rem;
+            }
+
+            .payment-methods {
+                grid-template-columns: 1fr;
+            }
+
+            .impact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="../../../index.html">
+                        <img src="../../../img/logo.png" alt="zhadev" class="logo-img">
+                        <div class="logo-text">zhadev</div>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <button class="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <ul class="nav-menu">
+                        <li><a href="../../../index.html">Beranda</a></li>
+                        <li><a href="../../../index.html#tools">Tools</a></li>
+                        <li><a href="about.html">Tentang</a></li>
+                        <li><a href="donation.html" class="donate-btn">Donasi</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="donation-container">
+        <div class="container">
+            <div class="donation-header">
+                <h1>Dukung zhadev</h1>
+                <p>Bantu kami menjaga platform ini tetap gratis dan terus berkembang</p>
+            </div>
+
+            <div class="donation-content">
+                <div class="donation-card">
+                    <div class="donation-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h2>Mengapa Donasi?</h2>
+                    <p>
+                        zhadev adalah platform gratis yang dikembangkan dengan ❤️. Donasi Anda membantu kami untuk:
+                    </p>
+                    <ul style="text-align: left; max-width: 500px; margin: 0 auto 2rem; color: var(--secondary-color);">
+                        <li>Menutupi biaya server dan infrastruktur</li>
+                        <li>Mengembangkan fitur-fitur baru</li>
+                        <li>Memperbaiki bug dan meningkatkan performa</li>
+                        <li>Menjaga platform tetap gratis untuk semua orang</li>
+                    </ul>
+                </div>
+
+                <h2 style="text-align: center; margin-bottom: 2rem; color: var(--dark-color);">Metode Pembayaran</h2>
+                
+                <div class="payment-methods">
+                    <!-- Dana -->
+                    <div class="payment-method">
+                        <div class="payment-icon payment-dana">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <h5>DANA</h5>
+                        <div class="payment-info">
+                            <div class="account-number">0856-5955-8652</div>
+                            <button class="copy-btn" data-account="085659558652">
+                                Salin Nomor
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- GoPay -->
+                    <div class="payment-method">
+                        <div class="payment-icon payment-gopay">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h5>GoPay</h5>
+                        <div class="payment-info">
+                            <div class="account-number">0856-5955-8652</div>
+                            <button class="copy-btn" data-account="085659558652">
+                                Salin Nomor
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- OVO -->
+                    <div class="payment-method">
+                        <div class="payment-icon payment-ovo">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h5>OVO</h5>
+                        <div class="payment-info">
+                            <div class="account-number">0856-5955-8652</div>
+                            <button class="copy-btn" data-account="085659558652">
+                                Salin Nomor
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="payment-method">
+                        <div class="payment-icon payment-paypal">
+                            <i class="fab fa-paypal"></i>
+                        </div>
+                        <h5>PayPal</h5>
+                        <div class="payment-info">
+                            <div class="account-number">cp.zhadev@gmail.com</div>
+                            <button class="copy-btn" data-account="cp.zhadev@gmail.com">
+                                Salin Email
+                            </button>
+                        </div>
+                    </div>
+                
+                    <div class="payment-method">
+                        <div class="payment-icon payment-bank">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h5>Bank Transfer</h5>
+                        <div class="payment-info">
+                            <div style="color: rgb(255, 255, 255); text-align: center; margin-bottom: 1rem;">
+                              <strong>Bank:</strong> BCA<br>
+                              <strong>Norek:</strong> Otw bkin<br>
+                              <strong>A.N:</strong> P****N A******A N****A<br>
+                          </div>
+                            <button class="copy-btn" data-account="memek">
+                                Salin Nomor Rekening
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3 class="faq-title">Pertanyaan Umum</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Apakah donasi bersifat wajib?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Tidak, donasi bersifat sukarela. zhadev akan tetap gratis untuk semua pengguna, dengan atau tanpa donasi.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Apa yang didanai dengan donasi?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Donasi digunakan untuk biaya server, pengembangan fitur baru, maintenance, dan improvement platform.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Bagaimana cara konfirmasi donasi?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Anda tidak perlu konfirmasi. Sistem kami akan otomatis mendeteksi donasi Anda.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Apakah ada benefit khusus untuk donatur?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Saat ini belum ada benefit khusus, namun kami sangat menghargai setiap kontribusi Anda.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-text">zhadev</div>
+                    <p>Tools gratis untuk semua kebutuhan digital</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Tools</h4>
+                        <a href="../ai.html">AI Assistant</a>
+                        <a href="../downloader.html">Downloader</a>
+                        <a href="../stalker.html">Stalker</a>
+                        <a href="../search.html">Search</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="about.html">Tentang</a>
+                        <a href="donation.html">Donasi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 zhadev. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/animations.js"></script>
+    <script src="../../js/script.js"></script>
+    <script>
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const accountNumber = this.getAttribute('data-account');
+                navigator.clipboard.writeText(accountNumber).then(() => {
+                    const originalText = this.textContent;
+                    this.textContent = 'Tersalin!';
+                    this.classList.add('copied');
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.classList.remove('copied');
+                    }, 2000);
+                });
+            });
+        });
+
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.classList.remove('active');
+                });
+                
+                if (!isActive) {
+                    answer.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
